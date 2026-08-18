@@ -34,6 +34,10 @@ draft: false
 
 外站 HTTP／HTTPS 連結會自動喺新分頁開啟；站內連結會留喺原本分頁。
 
+## 顯示模式
+
+網站預設跟隨系統嘅淺色／深色模式。Header 嘅切換按鈕可以手動轉換模式，選擇會儲存喺瀏覽器。
+
 ## 部署
 
 合併到 `master` 後，GitHub Actions 會自動建置並發佈到 GitHub Pages。Repository 嘅 Pages source 需要設為 **GitHub Actions**，自訂網域係 `korean.percussion.life`。

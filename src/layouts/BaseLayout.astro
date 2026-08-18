@@ -22,6 +22,30 @@ const homeUrl = import.meta.env.BASE_URL;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#f4f1e9" />
+    <script is:inline>
+      (() => {
+        let savedTheme = null;
+
+        try {
+          savedTheme = localStorage.getItem('theme');
+        } catch {
+          // Use the system preference when storage is unavailable.
+        }
+
+        const theme = savedTheme === 'light' || savedTheme === 'dark'
+          ? savedTheme
+          : window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light';
+
+        document.documentElement.dataset.theme = theme;
+        document.querySelector('meta[name="theme-color"]')?.setAttribute(
+          'content',
+          theme === 'dark' ? '#111713' : '#f4f1e9',
+        );
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href={`${homeUrl}favicon.svg`} />
     <link rel="alternate" type="application/rss+xml" title="SSY 韓文文法筆記" href={`${homeUrl}rss.xml`} />
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-Q92ZCX7Q1X"></script>
@@ -38,6 +62,9 @@ const homeUrl = import.meta.env.BASE_URL;
   <body>
     <header class="site-header">
       <a class="site-title" href={homeUrl}>SSY 韓文文法筆記</a>
+      <button class="theme-toggle" type="button" aria-label="切換至深色模式" title="切換至深色模式">
+        <span class="theme-toggle-icon" aria-hidden="true"></span>
+      </button>
     </header>
 
     <main>
@@ -50,6 +77,53 @@ const homeUrl = import.meta.env.BASE_URL;
     </footer>
 
     <script is:inline>
+      const themeToggle = document.querySelector('.theme-toggle');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+      function updateThemeToggle() {
+        const isDark = document.documentElement.dataset.theme === 'dark';
+        const label = isDark ? '切換至淺色模式' : '切換至深色模式';
+
+        themeToggle?.setAttribute('aria-label', label);
+        themeToggle?.setAttribute('title', label);
+        themeToggle?.setAttribute('aria-pressed', String(isDark));
+        document.querySelector('meta[name="theme-color"]')?.setAttribute(
+          'content',
+          isDark ? '#111713' : '#f4f1e9',
+        );
+      }
+
+      themeToggle?.addEventListener('click', () => {
+        const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+
+        document.documentElement.dataset.theme = nextTheme;
+
+        try {
+          localStorage.setItem('theme', nextTheme);
+        } catch {
+          // The current page still changes theme when storage is unavailable.
+        }
+
+        updateThemeToggle();
+      });
+
+      systemTheme.addEventListener('change', (event) => {
+        let savedTheme = null;
+
+        try {
+          savedTheme = localStorage.getItem('theme');
+        } catch {
+          // Continue following the system preference without storage.
+        }
+
+        if (savedTheme !== 'light' && savedTheme !== 'dark') {
+          document.documentElement.dataset.theme = event.matches ? 'dark' : 'light';
+          updateThemeToggle();
+        }
+      });
+
+      updateThemeToggle();
+
       for (const link of document.querySelectorAll('a[href]')) {
         try {
           const url = new URL(link.getAttribute('href'), window.location.href);

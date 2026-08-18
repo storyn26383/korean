@@ -13,6 +13,7 @@
 - Use npm as the package manager.
 - Run `npm run build` after changing the site.
 - Do not add production dependencies unless they are necessary.
+- Preserve both light and dark themes when changing colors or component styles.
 
 ## Content
 
