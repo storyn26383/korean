@@ -156,6 +156,33 @@ time,
   color: var(--muted);
 }
 
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.75rem;
+  padding: 0.15rem 0.65rem;
+  border: 1px solid var(--example-border);
+  border-radius: 999px;
+  color: var(--accent-strong);
+  background: var(--accent-soft);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.post-tags {
+  margin-top: 0.9rem;
+}
+
 .article {
   padding: clamp(1.35rem, 5vw, 3.5rem);
   border: 1px solid var(--border);
@@ -185,6 +212,7 @@ time,
 
 .article-meta {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
   font-size: 0.9rem;
@@ -196,6 +224,10 @@ time,
   border-radius: 999px;
   background: var(--accent);
   content: "";
+}
+
+.article-tags {
+  margin-left: 0.35rem;
 }
 
 .back-link {
