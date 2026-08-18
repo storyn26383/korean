@@ -34,6 +34,9 @@ const { Content } = await render(post);
               day: 'numeric',
             })}
           </time>
+          <ul class="tag-list article-tags" aria-label="文章標籤">
+            {post.data.tags.map((tag) => <li><span class="tag">{tag}</span></li>)}
+          </ul>
         </div>
       </div>
     </header>
