@@ -48,5 +48,21 @@ const homeUrl = import.meta.env.BASE_URL;
       <span>Built with Astro</span>
       <a href={`${homeUrl}rss.xml`}>RSS</a>
     </footer>
+
+    <script is:inline>
+      for (const link of document.querySelectorAll('a[href]')) {
+        try {
+          const url = new URL(link.getAttribute('href'), window.location.href);
+          const isWebLink = url.protocol === 'http:' || url.protocol === 'https:';
+
+          if (isWebLink && url.origin !== window.location.origin) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+          }
+        } catch {
+          // Leave malformed or unsupported links unchanged.
+        }
+      }
+    </script>
   </body>
 </html>
