@@ -7,11 +7,11 @@ interface Props {
 }
 
 const {
-  title = '韓文文法筆記',
+  title = 'SSY 韓文文法筆記',
   description = '以 Markdown 整理嘅韓文文法筆記。',
 } = Astro.props;
 
-const pageTitle = title === '韓文文法筆記' ? title : `${title} | 韓文文法筆記`;
+const pageTitle = title === 'SSY 韓文文法筆記' ? title : `${title} | SSY 韓文文法筆記`;
 const homeUrl = import.meta.env.BASE_URL;
 ---
 
@@ -23,12 +23,12 @@ const homeUrl = import.meta.env.BASE_URL;
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href={`${homeUrl}favicon.svg`} />
-    <link rel="alternate" type="application/rss+xml" title="韓文文法筆記" href={`${homeUrl}rss.xml`} />
+    <link rel="alternate" type="application/rss+xml" title="SSY 韓文文法筆記" href={`${homeUrl}rss.xml`} />
     <title>{pageTitle}</title>
   </head>
   <body>
     <header class="site-header">
-      <a class="site-title" href={homeUrl}>韓文文法筆記</a>
+      <a class="site-title" href={homeUrl}>SSY 韓文文法筆記</a>
     </header>
 
     <main>
