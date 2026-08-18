@@ -18,8 +18,11 @@
 ## Content
 
 - Blog posts belong in `src/content/posts/`.
+- Post filenames use the `YYYY-MM-DD-slug.md` format.
+- Public post URLs are derived from the full filename and include the date prefix.
 - Posts may cover Korean grammar or other Korean learning topics.
 - Grammar posts include grammar explanations, example sentences, and vocabulary.
+- Grammar conjugation sections use a `動詞 | 語幹 | 變化` table. Do not repeat the same conjugations immediately in a code block.
 - Each grammar post uses five example sentences: three basic examples and two variations.
 - Use `今日單字` as the vocabulary section heading.
 - The user supplies the vocabulary for each post. Do not invent a vocabulary list unless explicitly asked.
