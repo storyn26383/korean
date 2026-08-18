@@ -1,4 +1,4 @@
-# 韓文文法筆記
+# SSY 韓文文法筆記
 
 以 Astro、Markdown 同 GitHub Pages 建立嘅韓文文法 blog。
 
