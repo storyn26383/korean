@@ -2,6 +2,8 @@
 title: "-(으)려고 하다：打算／準備做某件事"
 description: "學習 -(으)려고 하다 嘅意思、接法同常見用法。"
 publishedAt: 2026-08-18
+tags:
+  - 初級文法
 draft: false
 ---
 
