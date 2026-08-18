@@ -3,7 +3,7 @@
 ## Project
 
 - This is an Astro static blog for Korean grammar notes.
-- The site title is `SSY 韓文文法筆記`.
+- The site title is `SSY 韓文筆記`.
 - The canonical site URL is `https://korean.percussion.life`.
 - GitHub Pages uses the custom domain above, so the site has no repository base path.
 - The default branch is `master`. Pull requests must target `master`.

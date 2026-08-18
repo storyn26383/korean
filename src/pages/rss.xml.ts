@@ -7,8 +7,8 @@ export async function GET(context: { site: URL }) {
   );
 
   return rss({
-    title: 'SSY 韓文文法筆記',
-    description: '以 Markdown 整理嘅韓文文法筆記。',
+    title: 'SSY 韓文筆記',
+    description: '以 Markdown 整理嘅韓文筆記。',
     site: context.site,
     items: posts.map((post) => ({
       title: post.data.title,

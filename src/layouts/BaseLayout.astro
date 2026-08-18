@@ -7,11 +7,11 @@ interface Props {
 }
 
 const {
-  title = 'SSY 韓文文法筆記',
-  description = '以 Markdown 整理嘅韓文文法筆記。',
+  title = 'SSY 韓文筆記',
+  description = '以 Markdown 整理嘅韓文筆記。',
 } = Astro.props;
 
-const pageTitle = title === 'SSY 韓文文法筆記' ? title : `${title} | SSY 韓文文法筆記`;
+const pageTitle = title === 'SSY 韓文筆記' ? title : `${title} | SSY 韓文筆記`;
 const homeUrl = import.meta.env.BASE_URL;
 ---
 
@@ -47,7 +47,7 @@ const homeUrl = import.meta.env.BASE_URL;
       })();
     </script>
     <link rel="icon" type="image/svg+xml" href={`${homeUrl}favicon.svg`} />
-    <link rel="alternate" type="application/rss+xml" title="SSY 韓文文法筆記" href={`${homeUrl}rss.xml`} />
+    <link rel="alternate" type="application/rss+xml" title="SSY 韓文筆記" href={`${homeUrl}rss.xml`} />
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-Q92ZCX7Q1X"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
@@ -61,7 +61,7 @@ const homeUrl = import.meta.env.BASE_URL;
   </head>
   <body>
     <header class="site-header">
-      <a class="site-title" href={homeUrl}>SSY 韓文文法筆記</a>
+      <a class="site-title" href={homeUrl}>SSY 韓文筆記</a>
       <button class="theme-toggle" type="button" aria-label="切換至深色模式" title="切換至深色模式">
         <span class="theme-toggle-icon" aria-hidden="true"></span>
       </button>
