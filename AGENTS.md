@@ -2,7 +2,7 @@
 
 ## Project
 
-- This is an Astro static blog for Korean grammar notes.
+- This is an Astro static blog for Korean learning notes.
 - The site title is `SSY 韓文筆記`.
 - The canonical site URL is `https://korean.percussion.life`.
 - GitHub Pages uses the custom domain above, so the site has no repository base path.
@@ -18,8 +18,9 @@
 ## Content
 
 - Blog posts belong in `src/content/posts/`.
-- Each post focuses on Korean grammar and includes grammar explanations, example sentences, and vocabulary.
-- Each post uses five example sentences: three basic examples and two variations.
+- Posts may cover Korean grammar or other Korean learning topics.
+- Grammar posts include grammar explanations, example sentences, and vocabulary.
+- Each grammar post uses five example sentences: three basic examples and two variations.
 - Use `今日單字` as the vocabulary section heading.
 - The user supplies the vocabulary for each post. Do not invent a vocabulary list unless explicitly asked.
 - Every post must include at least one tag. `初級文法` is an approved tag.
