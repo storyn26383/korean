@@ -1,6 +1,6 @@
 # SSY 韓文筆記
 
-以 Astro、Markdown 同 GitHub Pages 建立嘅韓文文法 blog。
+以 Astro、Markdown 同 GitHub Pages 建立嘅韓文學習筆記 blog。
 
 網站收錄韓文文法、例句同相關單字筆記。
 
