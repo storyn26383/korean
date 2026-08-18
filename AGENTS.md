@@ -21,6 +21,7 @@
 - Each post uses five example sentences: three basic examples and two variations.
 - Use `今日單字` as the vocabulary section heading.
 - The user supplies the vocabulary for each post. Do not invent a vocabulary list unless explicitly asked.
-- Do not invent categories, tags, levels, or other content taxonomy without explicit instructions.
+- Every post must include at least one tag. `初級文法` is an approved tag.
+- Do not invent new tags, categories, levels, or other content taxonomy without explicit instructions.
 - Do not write or modify Korean learning content unless explicitly requested.
 - External HTTP and HTTPS links must open in a new tab with `target="_blank"` and `rel="noopener noreferrer"`. Same-origin links must stay in the current tab.
