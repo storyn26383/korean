@@ -1,0 +1,52 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'SSY 韓文文法筆記',
+  description = '以 Markdown 整理嘅韓文文法筆記。',
+} = Astro.props;
+
+const pageTitle = title === 'SSY 韓文文法筆記' ? title : `${title} | SSY 韓文文法筆記`;
+const homeUrl = import.meta.env.BASE_URL;
+---
+
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href={`${homeUrl}favicon.svg`} />
+    <link rel="alternate" type="application/rss+xml" title="SSY 韓文文法筆記" href={`${homeUrl}rss.xml`} />
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-Q92ZCX7Q1X"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-Q92ZCX7Q1X');
+    </script>
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title" href={homeUrl}>SSY 韓文文法筆記</a>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <span>Built with Astro</span>
+      <a href={`${homeUrl}rss.xml`}>RSS</a>
+    </footer>
+  </body>
+</html>
