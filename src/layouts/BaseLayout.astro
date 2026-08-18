@@ -24,6 +24,15 @@ const homeUrl = import.meta.env.BASE_URL;
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href={`${homeUrl}favicon.svg`} />
     <link rel="alternate" type="application/rss+xml" title="SSY 韓文文法筆記" href={`${homeUrl}rss.xml`} />
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-Q92ZCX7Q1X"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-Q92ZCX7Q1X');
+    </script>
     <title>{pageTitle}</title>
   </head>
   <body>
