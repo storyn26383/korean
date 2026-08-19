@@ -29,6 +29,7 @@
 ### Grammar post structure
 
 - Include `title`, `description`, `publishedAt`, `tags`, and `draft` in frontmatter.
+- After changing an article's scope, confirm that `description` still reflects its main teaching points and remains distinct from other posts.
 - Keep the filename date prefix in sync with `publishedAt`.
 - Start with a concise explanation of the grammar's meaning and one representative Korean example with a Cantonese translation.
 - Use `## 文法接法` for conjugation rules.
