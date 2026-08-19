@@ -37,7 +37,7 @@
 - `不規則變化` is a general section and is not limited to `ㄹ`. Verify and include every irregular pattern that actually applies to the grammar, such as `ㄹ`, `ㅂ`, `ㄷ`, `ㅅ`, `ㅎ`, or `르`; do not add patterns that do not apply.
 - Use a `動詞 | 語幹 | 變化` table in each conjugation section. Do not repeat the same conjugations immediately in a code block.
 - Use `## 例句` with exactly five numbered examples: three basic examples followed by two variations.
-- Use `## 今日單字` for vocabulary. The user supplies the vocabulary; do not invent extra words unless explicitly asked.
+- Use `## 今日生字` for vocabulary. The user supplies the vocabulary; do not invent extra words unless explicitly asked.
 - For each supplied word, include its part of speech, Cantonese meaning, common collocations, and the example used in the article.
 - Add comparisons with related grammar or extra usages only when they materially clarify the target grammar.
 - End with `## 總結` and `## 參考資料`.
