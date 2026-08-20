@@ -21,7 +21,7 @@
 - Post filenames use the `YYYY-MM-DD-slug.md` format.
 - Public post URLs are derived from the full filename and include the date prefix.
 - Posts may cover Korean grammar or other Korean learning topics.
-- Every post must include at least one tag. `初級文法` is an approved tag.
+- Every post must include at least one tag. Approved tags are `初級文法` and `初級詞彙`.
 - Do not invent new tags, categories, levels, or other content taxonomy without explicit instructions.
 - Do not write or modify Korean learning content unless explicitly requested.
 - External HTTP and HTTPS links must open in a new tab with `target="_blank"` and `rel="noopener noreferrer"`. Same-origin links must stay in the current tab.
@@ -43,4 +43,18 @@
 - Add comparisons with related grammar or extra usages only when they materially clarify the target grammar.
 - End with `## 總結` and `## 參考資料`.
 - Verify Korean grammar and vocabulary against authoritative Korean-language sources before publishing, and link the sources in `參考資料`.
+- Put one half-width space between adjacent Korean and Chinese prose on both boundaries. Do not add a space before Chinese punctuation.
+
+### Vocabulary post structure
+
+- Include `title`, `description`, `publishedAt`, `tags`, and `draft` in frontmatter.
+- Keep the filename date prefix in sync with `publishedAt`.
+- Use the `初級詞彙` tag when vocabulary, expressions, or collocations are the main teaching point rather than a grammar pattern.
+- Start with a concise explanation of the topic and a quick-reference table.
+- Organize a themed vocabulary post around its target words. When the focus is verbs, use the verbs as the main section headings and list compatible nouns or collocations under each verb.
+- Preserve every word or expression supplied by the user. Do not invent extra words unless explicitly asked.
+- Give each expression a Cantonese meaning and include at least one natural example for every target word.
+- Call out overlapping or easily confused usages when they materially help the learner choose the correct expression.
+- End with `## 總結` and `## 參考資料`.
+- Verify Korean vocabulary and collocations against authoritative Korean-language sources before publishing, and link the sources in `參考資料`.
 - Put one half-width space between adjacent Korean and Chinese prose on both boundaries. Do not add a space before Chinese punctuation.
