@@ -62,9 +62,14 @@ const homeUrl = import.meta.env.BASE_URL;
   <body>
     <header class="site-header">
       <a class="site-title" href={homeUrl}>SSY 韓文筆記</a>
-      <button class="theme-toggle" type="button" aria-label="切換至深色模式" title="切換至深色模式">
-        <span class="theme-toggle-icon" aria-hidden="true"></span>
-      </button>
+      <div class="site-actions">
+        <nav aria-label="主要導覽">
+          <a class="site-nav-link" href={`${homeUrl}tags/`}>分類</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="切換至深色模式" title="切換至深色模式">
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+        </button>
+      </div>
     </header>
 
     <main>
