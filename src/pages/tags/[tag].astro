@@ -1,0 +1,48 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import PostList from '../../components/PostList.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => !data.draft);
+  const postsByTag = new Map<string, CollectionEntry<'posts'>[]>();
+
+  for (const post of posts) {
+    for (const tag of post.data.tags) {
+      const taggedPosts = postsByTag.get(tag) ?? [];
+      taggedPosts.push(post);
+      postsByTag.set(tag, taggedPosts);
+    }
+  }
+
+  return [...postsByTag.entries()].map(([tag, taggedPosts]) => ({
+    params: { tag },
+    props: {
+      tag,
+      posts: taggedPosts.sort(
+        (a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf(),
+      ),
+    },
+  }));
+}
+
+interface Props {
+  tag: string;
+  posts: CollectionEntry<'posts'>[];
+}
+
+const { tag, posts } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title={`${tag}文章`} description={`瀏覽所有標記為「${tag}」嘅韓文學習筆記。`}>
+  <section class="archive">
+    <a class="back-link" href={`${baseUrl}tags/`}>← 返回文章分類</a>
+    <header class="archive-header">
+      <h1>{tag}</h1>
+      <p>共 {posts.length} 篇文章</p>
+    </header>
+
+    <PostList posts={posts} emptyMessage="呢個分類暫時未有文章。" />
+  </section>
+</BaseLayout>
