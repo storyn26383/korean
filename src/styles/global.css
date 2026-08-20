@@ -351,10 +351,11 @@ time,
 }
 
 .prose table {
-  display: table;
-  width: 100%;
+  display: block;
+  width: max-content;
+  max-width: 100%;
   margin: 1.25rem 0 1.75rem;
-  overflow: hidden;
+  overflow-x: auto;
   border: 1px solid var(--border);
   border-radius: 0.85rem;
   border-collapse: separate;
@@ -489,11 +490,6 @@ time,
     font-size: 1.1rem;
   }
 
-  .prose table {
-    display: block;
-    max-width: 100%;
-    overflow-x: auto;
-  }
 
   .prose th,
   .prose td {
