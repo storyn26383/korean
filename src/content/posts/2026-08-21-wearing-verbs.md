@@ -61,7 +61,7 @@ draft: false
 
 `안경을 끼다` 同 `안경을 쓰다` 都係自然講法。記筆記時可以先跟今篇用 `끼다`，但見到 `쓰다` 唔代表用錯。
 
-## 입다：衣物着上身
+## 입다：衣物着喺身體
 
 `입다` 主要用於着喺身體或者腿部嘅衣物。
 
@@ -107,7 +107,7 @@ draft: false
 
 ```text
 양말을 신고 신발을 신어요.
-着好襪之後再着鞋。
+着襪，再着鞋。
 ```
 
 鞋同襪要用 `신다`，唔用 `입다`。所以係 `양말을 신다`，唔係 `양말을 입다`。
@@ -145,4 +145,7 @@ draft: false
 
 - [國立國語院《한국어기초사전》：쓰다](https://krdict.korean.go.kr/m/eng/searchResultView?ParaSenseSeq=&ParaWordNo=65173&fileNo=&imgCount=&multiMediaSeq=&nation=eng&searchKind=&searchKindValue=&shortenUrl=&studySeq=)
 - [國立國語院《한국어기초사전》：끼다](https://krdict.korean.go.kr/m/eng/searchResultView?ParaSenseSeq=&ParaWordNo=61097&fileNo=&imgCount=&multiMediaSeq=&nation=eng&searchKind=&searchKindValue=&shortenUrl=&studySeq=)
-- [國立國語院《한국어기초사전》](https://krdict.korean.go.kr/)
+- [國立國語院《한국어기초사전》：입다](https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=17174)
+- [國立國語院《한국어기초사전》：목걸이（목걸이를 하다）](https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=16150)
+- [國立國語院《한국어기초사전》：양말（양말을 신다）](https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62513)
+- [國立國語院《한국어기초사전》：시계（시계를 차다）](https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=30190)
