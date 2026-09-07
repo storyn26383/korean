@@ -36,7 +36,7 @@
 - Under `文法接法`, put `### 冇 받침` before `### 有 받침`.
 - Add `### 不規則變化` only when the grammar actually has an irregular or exceptional conjugation. Omit the section completely when none applies.
 - `不規則變化` is a general section and is not limited to `ㄹ`. Verify and include every irregular pattern that actually applies to the grammar, such as `ㄹ`, `ㅂ`, `ㄷ`, `ㅅ`, `ㅎ`, or `르`; do not add patterns that do not apply.
-- Use a `動詞 | 語幹 | 變化` table in each conjugation section. Do not repeat the same conjugations immediately in a code block.
+- Use a `動詞 | 變化` or `動詞／形容詞 | 變化` table in each conjugation section. Do not include a separate stem column, and do not repeat the same conjugations immediately in a code block.
 - Use `## 例句` with exactly five numbered examples: three basic examples followed by two variations.
 - Use `## 今日生字` for vocabulary. The user supplies the vocabulary; do not invent extra words unless explicitly asked.
 - For each supplied word, include its part of speech, Cantonese meaning, common collocations, and the example used in the article.
