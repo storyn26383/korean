@@ -308,4 +308,5 @@ draft: false
 ## 參考資料
 
 - [國立國語院線上問答：`-ㄴ지` 嘅結構同意思](https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&pageIndex=1&qna_seq=313835&searchCondition=&searchKeyword=)
+- [國立國語院常見問題：`가능할지` 同 `가능한지` 嘅分別](https://korean.go.kr/front/mcfaq/mcfaqView.do?mcfaq_seq=8965&mn_id=&pageIndex=19)
 - [國立國語院線上問答：`-는지` 同依存名詞 `지` 嘅空格分別](https://m.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&pageIndex=1&qna_seq=308800)
